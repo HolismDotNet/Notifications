@@ -15,7 +15,9 @@
                 },
                 {
                     "name": "IsSeen",
-                    "type": "boolean"
+                    "type": "boolean",
+                    "hasDefault": true,
+                    "defaultSqlText": "0"
                 }
             ]
         }
