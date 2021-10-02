@@ -1,0 +1,32 @@
+{
+    "name": "Notifications",
+    "tables": [
+        {
+            "name": "Notifications",
+            "columns": [
+                {
+                    "name": "UserGuid"
+                },
+                {
+                    "name": "Date"
+                },
+                {
+                    "name": "Message"
+                },
+                {
+                    "name": "IsSeen",
+                    "type": "boolean"
+                }
+            ]
+        }
+    ],
+    "views": [
+        {
+            "name": "NotificationViews",
+            "query": [
+                "select *",
+                "from Notifications"
+            ]
+        }
+    ]
+}
