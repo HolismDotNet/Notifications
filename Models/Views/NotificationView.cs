@@ -13,7 +13,7 @@ namespace Holism.Notifications.Models
 
         public Guid UserGuid { get; set; }
 
-        public DateTime Date { get; set; }
+        public DateTime UtcDate { get; set; }
 
         public string Message { get; set; }
 
