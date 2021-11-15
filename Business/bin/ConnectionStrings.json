@@ -1,0 +1,3 @@
+{
+  "Notifications": "data source=database,1433; initial catalog=Notifications; user id=SA; password=lksU2o412f7tBj58t07B;application name=Notifications;"
+}
