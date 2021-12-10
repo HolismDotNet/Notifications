@@ -1,26 +1,20 @@
-using Holism.Notifications.Models;
-using Holism.DataAccess;
+namespace Holism.Notifications.DataAccess;
 
-namespace Holism.Notifications.DataAccess
+public class Repository
 {
-    public class Repository
+    public static Repository<Notification> Notification
     {
-        public static Repository<Notification> Notification
+        get
         {
-            get
-            {
-                return new Holism.DataAccess.Repository<Notification
-                >(new NotificationsContext());
-            }
+            return new Repository<Notification>(new NotificationsContext());
         }
+    }
 
-        public static Repository<NotificationView> NotificationView
+    public static Repository<NotificationView> NotificationView
+    {
+        get
         {
-            get
-            {
-                return new Holism.DataAccess.Repository<NotificationView
-                >(new NotificationsContext());
-            }
+            return new Repository<NotificationView>(new NotificationsContext());
         }
     }
 }
