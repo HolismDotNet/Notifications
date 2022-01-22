@@ -1,4 +1,4 @@
-namespace Holism.Notifications.DataAccess;
+namespace Notifications;
 
 public class NotificationsContext : DatabaseContext
 {

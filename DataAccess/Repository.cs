@@ -1,20 +1,20 @@
-namespace Holism.Notifications.DataAccess;
+namespace Notifications;
 
 public class Repository
 {
-    public static Repository<Notification> Notification
+    public static Repository<Notifications.Notification> Notification
     {
         get
         {
-            return new Repository<Notification>(new NotificationsContext());
+            return new Repository<Notifications.Notification>(new NotificationsContext());
         }
     }
 
-    public static Repository<NotificationView> NotificationView
+    public static Repository<Notifications.NotificationView> NotificationView
     {
         get
         {
-            return new Repository<NotificationView>(new NotificationsContext());
+            return new Repository<Notifications.NotificationView>(new NotificationsContext());
         }
     }
 }

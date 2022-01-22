@@ -1,4 +1,4 @@
-namespace Holism.Notifications.Models;
+namespace Notifications;
 
 public class NotificationView : IEntity
 {
