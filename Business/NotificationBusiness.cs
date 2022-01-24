@@ -1,20 +1,10 @@
+namespace Notifications;
 
-
-
-
-
-
-
-
-
-namespace Holism.Notifications.Business
+public class NotificationBusiness: Business<NotificationView, Notification>
 {
-    public class NotificationBusiness: Business<NotificationView, Notification>
-    {
-        protected override Repository<Notification> WriteRepository =>
-            Repository.Notification;
+    protected override Repository<Notification> WriteRepository =>
+        Repository.Notification;
 
-        protected override ReadRepository<NotificationView> ReadRepository =>
-            Repository.NotificationView;
-    }
+    protected override ReadRepository<NotificationView> ReadRepository =>
+        Repository.NotificationView;
 }
